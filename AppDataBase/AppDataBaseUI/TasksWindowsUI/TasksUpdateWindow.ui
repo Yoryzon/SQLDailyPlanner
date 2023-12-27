@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TasksUpdateWindow</class>
+ <widget class="QDialog" name="TasksUpdateWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>880</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>880</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="UpdateTaskGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>840</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Update Task</string>
+   </property>
+   <widget class="QGroupBox" name="TaskName">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>120</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Task Name</string>
+    </property>
+    <widget class="QPlainTextEdit" name="TaskNamePlainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>100</width>
+       <height>80</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="DescriptionGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>240</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Description</string>
+    </property>
+    <widget class="QPlainTextEdit" name="DescriptionPlainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>220</width>
+       <height>140</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="DueDateGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Due Date</string>
+    </property>
+    <widget class="QDateEdit" name="DueDateDateEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="PriorityGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>250</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Priority</string>
+    </property>
+    <widget class="QComboBox" name="PriorityComboBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Urgent and important</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Not urgent, but important</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Urgent, but not important</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Not urgent and not important</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="StatusGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Status</string>
+    </property>
+    <widget class="QComboBox" name="StatusComboBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Done</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>In process</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Waiting</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="EventsGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>500</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Events</string>
+    </property>
+    <widget class="QTableView" name="EventsTableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>480</width>
+       <height>180</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>420</y>
+      <width>800</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="HorizontalLayout">
+     <item>
+      <spacer name="HorizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="UpdateTaskButton">
+       <property name="text">
+        <string>Update Task</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CancelButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="TasksForTheEventGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>20</y>
+      <width>290</width>
+      <height>390</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Tasks For The Event </string>
+    </property>
+    <widget class="QTableView" name="TasksForTheEventTableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>270</width>
+       <height>360</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

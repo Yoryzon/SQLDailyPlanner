@@ -1,0 +1,5 @@
+DATABASE_NAME = "DataBaseApp"
+DATABASE_USER = "Manager"
+DATABASE_PASSWORD = "Password"
+DATABASE_HOST = "localhost"
+DATABASE_PORT = 5432
